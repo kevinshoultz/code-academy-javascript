@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blank HTML</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="js/main.js"></script>
+        <script>
+            // https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/understand-string-immutability
+            // Setup
+            let myStr = "Jello World";
+
+            // Only change code below this line
+            myStr = "Hello World"; 
+            // Only change code above this line
+
+            //myStr[0] = "H"; // Change this 
+            // To do something like the above, split the string into an array first. Then join.
+            const splitStr = myStr.split('');
+            splitStr[0] = "H";
+            myStr = splitStr.join('');
+        </script>
+    </head>
+    <body>
+        Alternative code here.
+    </body>
+</html>
